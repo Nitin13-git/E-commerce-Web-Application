@@ -1,6 +1,6 @@
 # E-commerce Web Application
 
-A modern e-commerce web application built with Spring Boot, featuring AI-powered chat interface for natural language interactions.
+A modern e-commerce web application built with Spring Boot.
 
 ## Features
 
@@ -13,13 +13,7 @@ A modern e-commerce web application built with Spring Boot, featuring AI-powered
 - **Order Management**
   - Create and track orders
   - Order history and status updates
-  - Secure payment processing
 
-- **AI-Powered Chat Interface**
-  - Natural language processing for product queries
-  - Intelligent product recommendations
-  - Conversational order placement
-  - Support for multiple AI providers (OpenAI, Anthropic)
 
 ## Tech Stack
 
@@ -30,11 +24,6 @@ A modern e-commerce web application built with Spring Boot, featuring AI-powered
   - MySQL Database
   - Maven (Dependency Management)
 
-- **AI Integration**
-  - OpenAI GPT-4
-  - Anthropic Claude
-  - Custom prompt engineering
-  - Natural language processing
 
 ## Getting Started
 
@@ -50,7 +39,7 @@ A modern e-commerce web application built with Spring Boot, featuring AI-powered
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/ecommerce-webapp.git
+   https://github.com/Nitin13-git/E-commerce-Web-Application.git
    cd ecommerce-webapp
    ```
 
@@ -58,19 +47,14 @@ A modern e-commerce web application built with Spring Boot, featuring AI-powered
    - Create a MySQL database named `ecommerce`
    - Update `application.properties` with your database credentials
 
-3. Configure AI providers:
-   - Add your API keys to `application.properties`:
-     ```properties
-     spring.ai.openai.api-key=your-openai-api-key
-     spring.ai.anthropic.api-key=your-anthropic-api-key
-     ```
 
-4. Build the application:
+
+3. Build the application:
    ```bash
    mvn clean install
    ```
 
-5. Run the application:
+4. Run the application:
    ```bash
    mvn spring-boot:run
    ```
@@ -99,36 +83,6 @@ A modern e-commerce web application built with Spring Boot, featuring AI-powered
 - `POST /api/chat` - Process user query
 - `GET /api/chat/history` - Get chat history
 
-## AI Integration
-
-The application uses Spring AI to provide natural language processing capabilities. The AI system can:
-
-1. Understand user queries about products
-2. Search and recommend products
-3. Help with order placement
-4. Provide product information
-5. Handle customer support queries
-
-### Prompt Engineering
-
-The application uses carefully crafted prompts to ensure accurate and helpful responses:
-
-```java
-public class EcommerceRouterPrompt {
-    public static final String DEFAULT_ROUTER_PROMPT = """
-        You are an AI assistant for an e-commerce store. Your role is to:
-        1. Help users find products
-        2. Provide product information
-        3. Assist with order placement
-        4. Answer customer queries
-        
-        Available tools:
-        %s
-        
-        Please analyze the user's query and respond appropriately.
-        """;
-}
-```
 
 ## Security
 
@@ -136,7 +90,7 @@ public class EcommerceRouterPrompt {
 - Role-based access control
 - Secure API endpoints
 - Input validation and sanitization
-- API key encryption
+
 
 ## Error Handling
 
@@ -169,7 +123,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Acknowledgments
 
 - Spring Framework
-- OpenAI
-- Anthropic
 - MySQL
 - Maven 
